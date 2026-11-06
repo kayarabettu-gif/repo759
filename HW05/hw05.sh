@@ -31,6 +31,7 @@ echo "===== task3 sanity (n=1000) ====="
 ./task3 1000
 
 echo "===== task3 sweep ====="
+# Logging into csv to record
 echo "n,tpb,ms" > task3_timings.csv
 for p in $(seq 10 29); do
     n=$((2 ** p))
